@@ -33,7 +33,6 @@ const Home = () => {
                         Logout
                     </button>
         </nav>
-<p    className=" text-gray-300 hover:text-white transition-colors duration-200 text-2xl font-semibold mx-auto mb-4 overflow-hidden"> All Books </p>
            <Outlet/>
         </div>
     );
