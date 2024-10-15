@@ -6,7 +6,7 @@ const LandingPage = () => {
     return (
         <div className="min-h-screen flex flex-col bg-gray-900 text-gray-200">
             <header className="flex justify-between items-center p-4 shadow-md">
-                <h1 className="text-2xl font-bold">Logo</h1>
+                <h1 className="text-2xl font-bold">🔖LMS</h1>
                 <div>
                     <Link to="/login" className="bg-blue-600 text-white px-4 py-2 rounded mr-2">
                         Login
