@@ -21,7 +21,7 @@ const ShowBooks = () => {
         fetchBooks();
     }, []);
   return (
-       <div className='flex h-[90vh]  flex-wrap justify-center  gap-4  ' >
+       <div className='flex h-[90vh] bg-gray-900 overflow-auto  flex-wrap justify-center  gap-4  ' >
                     {books.length > 0 ? (
                         books.map(book => <BookCard key={book.id} book={book} available={true} />) 
                     ) : (
