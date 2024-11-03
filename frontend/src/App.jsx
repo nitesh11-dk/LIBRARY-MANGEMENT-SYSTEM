@@ -1,5 +1,5 @@
 import React from 'react';
-import { Route , Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ShowBooks from './Components/ShowBooks.jsx';
@@ -12,21 +12,21 @@ import BorrowedBooks from './Components/ BorrowedBooks.jsx';
 function App() {
   return (
     <>
-    <div className='h-screen w-screen'>
-     <ToastContainer position='bottom-right'/>
+      <div className='h-screen w-screen'>
+        <ToastContainer position='bottom-right' />
 
-     <Routes>
-      <Route path='/lp' element = {<LandingPage />} > </Route>
-      <Route path='/signup' element = {<Signup />} > </Route>
-      <Route path='/login' element = {<Login />} > </Route>
-      <Route path='/home' element = {<Home />} > 
-      
-      <Route path='/home/borrowed_books' element = {<BorrowedBooks />} > </Route>
-      <Route path='/home/show_books' element = {<ShowBooks />} > </Route>
+        <Routes>
+          <Route path='/' element={<LandingPage />} > </Route>
+          <Route path='/signup' element={<Signup />} > </Route>
+          <Route path='/login' element={<Login />} > </Route>
+          <Route path='/home' element={<Home />} >
 
-      </Route>
-     </Routes>
-    </div>
+            <Route path='/home/borrowed_books' element={<BorrowedBooks />} > </Route>
+            <Route path='/home/show_books' element={<ShowBooks />} > </Route>
+
+          </Route>
+        </Routes>
+      </div>
     </>
   );
 }
